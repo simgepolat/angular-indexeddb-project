@@ -1,0 +1,43 @@
+.navbar-brand {
+    color: #3d2f34 !important;
+    margin-left: 1%;
+}
+
+.navbar-light.bg-light {
+  background-color: #d09e98 !important;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  --bs-navbar-padding-x: 2rem;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.btn-primary {
+  margin-left: auto; 
+}
+
+@media only screen and (max-width: 768px) {
+  img.logo {
+    width: 250px;
+  }
+}
+
+
+.nav-link {
+  color: #3d2f34 !important;
+}
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}

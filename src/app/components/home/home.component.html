@@ -1,0 +1,10 @@
+<div class="main-container">
+  <div class="container-fluid">
+    <div class="company-section">
+      <app-company (companySelected)="onCompanySelected($event)"></app-company>
+    </div>
+    <div class="employee-section" *ngIf="selectedCompanyId">
+      <app-employee [companyId]="selectedCompanyId"></app-employee>
+    </div>
+  </div>
+</div>

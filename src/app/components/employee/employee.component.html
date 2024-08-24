@@ -1,0 +1,45 @@
+<div class="employee-container" *ngIf="companyId">
+  <div *ngIf="isLoggedIn">
+    <form [formGroup]="employeeForm" (ngSubmit)="addOrUpdateEmployee()" class="employee-form">
+      <div class="input-group">
+        <span class="input-group-text">Employee name</span>
+        <input formControlName="name" type="text" aria-label="Employee name" class="form-control">
+        <button type="submit">{{ editEmployee ? 'Update Employee' : 'Add Employee' }}</button>
+        <!-- <button type="button" (click)="resetEmployeeForm()">Clear Form</button> -->
+      </div>
+    </form>
+  </div>
+  <div *ngIf="!isLoggedIn">
+    <p><b><i class="bi bi-exclamation-octagon-fill"></i> If you want to make changes to companies and employees, please
+        log in with Google.</b></p>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Employee List</h5>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="text-end">Name Surname</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <td class="col-name text-end">{{ employee.name }}</td>
+            <td class="col-action">
+              <button type="button" class="btn btn-outline-light" (click)="editEmployeeDetails(employee)">
+                <i class="bi bi-pencil-square"></i>
+              </button>
+            </td>
+            <td class="col-action">
+              <button type="button" class="btn btn-outline-light" (click)="deleteEmployee(employee.id!)">
+                <i class="bi bi-x-circle"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
