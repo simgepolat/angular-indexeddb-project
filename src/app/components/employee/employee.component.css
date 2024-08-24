@@ -1,7 +1,7 @@
 button {
     padding: 5px 10px;
     margin-right: 5px;
-    background-color: #d09e98;
+    background-color: #76ABAE;
     /* color: white; */
     border: none;
     cursor: pointer;
@@ -21,6 +21,7 @@ input {
     margin-right: 10px;
     /* width: 70%; */
     border-radius: 5px;
+    background-color: #EEEEEE;
 }
 
 .employee-container {
@@ -49,4 +50,12 @@ input {
 }
 .card {
     border-radius: 20px;
+    background-color: #EEEEEE;
+}
+.custom-warning-text {
+    color: #EEEEEE;
+}
+
+.btn{
+    color: #76ABAE !important;
 }
