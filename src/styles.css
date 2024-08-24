@@ -8,5 +8,13 @@ body {
   color: #3d2f34 !important;
 }
 
+.nav-link {
+  color: #3d2f34 !important;
+}
+
+.navbar-brand {
+  color: #3d2f34 !important;
+  margin-left: 1%;
+}
  
 
