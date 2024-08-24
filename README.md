@@ -10,7 +10,7 @@ Unauthenticated users have read-only access, allowing them to view the data but 
 
 The application ensures that HTML, CSS, and JavaScript code is written following best practices, making it maintainable and scalable for years to come while ensuring a seamless user experience.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
 
 
 ## Technologies Used
@@ -24,6 +24,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Bootstrap
 
 ## Screenshots
+1. **Guest User**
+![Screenshot 1](./src/assets/docs/guest-user.png)
+
+2. **Login Page**
+![Screenshot 2](./src/assets/docs/login-page.png)
+
+3. **Authenticated User**
+![Screenshot 3](./src/assets/docs/registered-user.png)
+
+
 
 ## Features
 
