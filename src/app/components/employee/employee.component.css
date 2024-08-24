@@ -5,7 +5,7 @@ button {
     /* color: white; */
     border: none;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 button:hover {
@@ -46,4 +46,7 @@ input {
 
 .text-end {
   text-align:left !important;
+}
+.card {
+    border-radius: 20px;
 }
