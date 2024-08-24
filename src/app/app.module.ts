@@ -37,7 +37,7 @@ import { FooterComponent } from './components/footer/footer.component';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              ''
+              'client-id'
             )
           }
         ],
